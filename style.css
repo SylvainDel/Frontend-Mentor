@@ -19,7 +19,7 @@ a{
     cursor: pointer;
     color: inherit;
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-    transition: text-decoration-color 300ms;
+    transition: text-decoration-color 600ms;
 
 }
 
@@ -27,7 +27,6 @@ a:hover{
      text-decoration-color: var(--accent);
 
 }
-
 
 .background-wrapper{
    position: absolute;

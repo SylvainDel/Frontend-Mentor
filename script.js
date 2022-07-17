@@ -37,8 +37,21 @@ function setHeroElements(targetId){
     heroRepo.href = challengeElements.github;
     heroFrontendLink.href = challengeElements.frontend;
 
+    setSelectedMiniature(targetId)
+
 }
 
+function setSelectedMiniature(id){
+    let previouslySelected = document.querySelectorAll(".selected-miniature");
+    let selected = document.getElementById(id);
+    if(previouslySelected.length > 0){
+        previouslySelected.forEach(selection => {selection.classList.remove("selected-miniature")})
+    }
+    selected.classList.add("selected-miniature");
+}
 
 /* By Default (on loading ) display the first challenge in the hero  */
-setHeroElements(1);
+window.onload = ()=>{
+    setHeroElements(1);
+    setSelectedMiniature(1);
+}
