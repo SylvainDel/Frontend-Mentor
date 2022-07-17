@@ -1,0 +1,26 @@
+{
+    "challenges": [
+
+        {
+        "id" : 1,
+        "title": "Base Apparel coming soon page",
+        "baseLink": "./challenges/base-apparel-coming-soon-master",
+        "image": "/design/desktop-design.jpg",
+        "index": "/index.html",
+        "description" : "This layout looks simple enough, but there are some interesting details to it that will test your CSS skills. You'll also get to practice basic form validation.",
+        "github": "",
+        "frontend":"https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0"
+        },
+        {
+        "id" : 2,
+        "title": "Huddle landing page",
+        "baseLink": "challenges/huddle-landing-page-with-single-introductory-section-master",
+        "image": "/design/desktop-design.jpg",
+        "index": "/index.html",
+        "description" : "A perfect challenge for beginners, this project will get you working with a two column layout.",
+        "github": "",
+        "frontend":"https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0"
+        }
+        ]
+}
+    
