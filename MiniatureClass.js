@@ -12,6 +12,7 @@ export class Miniature{
     setTags(id){
         this.element.classList.add("miniature")
         this.element.id = id;
+        this.element.tabIndex = id;
 
     }
     setImageNode(imgURL){
@@ -23,13 +24,6 @@ export class Miniature{
     display(){
         return(this.element);
     }
-    setTitle(){
-        this.title = challenge.title;
-    }
-    getTitle(){
-        return(this.title);
-    }
-    
 
 }
 

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Libre+Baskerville&display=swap');
 
 :root{
     --dark--blue: rgb(70, 71, 82);
     --light--blue:  rgb(123, 125, 162);
-    --accent : rgba(243, 162, 170, 0.908);
+    --accent : #f2a3abe8;
 
 }
 
@@ -12,6 +13,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+a{
+    font-size: larger;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+
+}
+
+a:hover{
+     text-decoration-color: var(--accent);
+
+}
+
 
 .background-wrapper{
    position: absolute;
@@ -24,6 +40,7 @@
    min-height: 100vh;
    z-index: 1;
 }
+
 .content-wrapper{
     font-family: 'Happy Monkey', cursive;
     color: var(--dark--blue);
@@ -46,6 +63,9 @@ ul{
     list-style: none;
     display: flex;
     gap: 1rem;
+}
+li:not(:last-child)::after{
+    content: "  |";
 }
 
 h1{
@@ -116,7 +136,11 @@ article{
     counter-increment: article-counter;
 }
 
-article:hover{
+.selected-miniature {
+    border: 3px solid var(--accent);
+}
+
+.miniature:hover{
     border: 3px solid var(--accent);
 }
 
@@ -125,15 +149,23 @@ article:hover{
     height: 280px;
     margin-top: 1rem;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+.hero-title{
+    margin: 0.5rem 0;
+    font-family: 'Libre Baskerville', serif;
+
 }
 
 .hero-description{
     padding-top: 0.5rem;
     border-top: 2px solid var(--accent);
+    text-align: justify;
     display: block;
     max-width: 30rem;
+   font-family: 'Libre Baskerville', serif;
 }
 
 .hero-link-wrapper{
@@ -142,16 +174,4 @@ article:hover{
     gap: 0.5rem;
     justify-content: space-around;
 }
-.hero-link, .hero-repo, .hero-frontendLink{
-    font-size: larger;
-    cursor: pointer;
-    color: inherit;
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-    transition: text-decoration-color 300ms;
 
-}
-
-.hero-link:hover, .hero-repo:hover , .hero-frontendLink:hover{
-     text-decoration-color: var(--accent);
-
-}
