@@ -7,9 +7,9 @@
 --gradientA: linear-gradient(135deg, hsl(0, 29%, 95%), hsl(0, 64%, 80%));
 --gradientB: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 --fontSize :16px;
---heroDesktop: url("./challenges/base-apparel-coming-soon-master/images/hero-desktop.jpg");
---heroMobile: url("./challenges/base-apparel-coming-soon-master/images/hero-mobile.jpg");
---background : url("./challenges/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg");
+--heroDesktop: url("https://raw.githubusercontent.com/SylvainDel/Frontend-Mentor/master/challenges/base-apparel-coming-soon-master/images/hero-desktop.jpg");
+--heroMobile: url("https://raw.githubusercontent.com/SylvainDel/Frontend-Mentor/master/challenges/base-apparel-coming-soon-master/images/hero-mobile.jpg");
+--background : url("https://raw.githubusercontent.com/SylvainDel/Frontend-Mentor/master/challenges/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg");
 }
 
 *{
