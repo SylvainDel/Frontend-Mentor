@@ -41,6 +41,8 @@ header{
 .hero-container{
     grid-area: hero;
     background-image: var(--heroDesktop);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 main{
     grid-area: main;
@@ -133,7 +135,7 @@ input:active{
         height: auto;
         overflow: scroll;
         grid-template-columns: 100%;
-        grid-template-rows: 5rem 15rem;
+        grid-template-rows: 5.2rem 17.5rem auto;
         grid-template-areas: 
         "header"
         "hero"
@@ -146,22 +148,34 @@ input:active{
     header{
         padding: 2rem;
     }
+    .logo{
+       width: 6.2rem;
+    }
+
     main{
         padding: 2rem;
-        background-image: none;
     }
     h1{
-        font-size: 3rem;
+        font-size: 2.3rem;
+        line-height: 1.2;
         letter-spacing: 0.8rem;
         text-align: center;
     }
     p{
         text-align: center;
         width: 100%;
-        line-height: 1.2;
+        line-height: 1.3;
         font-size: 14px;
     }
     form{
         width: 100%;
     }
+    .form-input{
+        height: 3rem;
+    }
+    .form-btn{
+   width: 5rem;
+   height: 3rem;
+
+}
 }
